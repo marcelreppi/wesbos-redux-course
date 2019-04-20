@@ -1,5 +1,6 @@
 import { bindActionCreators } from "redux"
 import { connect } from "react-redux"
+import { withRouter } from "react-router"
 import * as actionCreators from "../actions/actionCreator"
 import Main from "./Main"
 
@@ -19,4 +20,4 @@ const App = connect(
   mapDispatchToProps
 )(Main)
 
-export default App
+export default withRouter(App)
